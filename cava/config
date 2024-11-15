@@ -227,7 +227,7 @@
 # Gradient mode, only hex defined colors are supported,
 # background must also be defined in hex or remain commented out. 1 = on, 0 = off.
 # You can define as many as 8 different colors. They range from bottom to top of screen
-gradient = 1
+gradient = 20
 gradient_count = 2
 
 
@@ -238,8 +238,22 @@ gradient_count = 2
     #gradient_color_2 = '#3242a8'
 
 #Blue:
-    gradient_color_1 = '#34e0a1'
-    gradient_color_2 = '#34bee0'
+    #gradient_color_1 = '#34e0a1'
+    #gradient_color_2 = '#34bee0'
+
+#Sunset:
+    gradient_color_1 = '#ff9100'
+    gradient_color_2 = '#ff0000'
+
+#Gay:
+    #gradient_color_1 = '#ff0000'
+    #gradient_color_2 = '#ff9100'
+    #gradient_color_3 = '#fff200'
+    #gradient_color_4 = '#51ff00'
+    #gradient_color_5 = '#00ffff'
+    #gradient_color_6 = '#0400ff'
+    #gradient_color_7 = '#d400ff'
+
 
 [smoothing]
 

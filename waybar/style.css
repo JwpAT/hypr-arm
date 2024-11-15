@@ -104,6 +104,7 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
+#custom-cava,
 #mpd {
     padding: 0 10px;
     color: #ffffff;
@@ -134,6 +135,25 @@ button:hover {
     padding: 1px 10px 1px 10px;
     border-radius: 12px 12px 12px 12px;
     margin-top: 5px;
+}
+
+#custom-waypaper {
+    background: rgba(5, 5, 5, 0.2);
+    padding: 1px 10px;
+    border-radius: 12px;
+    margin-top: 5px;
+}
+
+#custom-cava {
+    background: rgba(5, 5, 5, 0.2);
+    padding: 1px 10px;
+    border-radius: 12px;
+    margin-top: 5px;
+}
+
+#cava-player .status {
+    font-size: 18px;
+    color: #ffffff; /* White icon color */
 }
 
 #custom-power {   
@@ -312,6 +332,9 @@ label:focus {
 
 #temperature {
     background: rgba(5, 5, 5, 0.2);
+    padding: 1px 10px 1px 10px;
+    border-radius: 12px 12px 12px 12px;
+    margin-top: 5px;
 }
 
 #temperature.critical {

@@ -18,10 +18,6 @@
 # Create your files separately and then link them to this file like this:
 # source = ~/.config/hypr/myColors.conf
 
-#################
-##### DEBUG #####
-#################
-
 
 ################
 ### MONITORS ###
@@ -86,11 +82,9 @@ general {
     border_size = 1
 
     # https://wiki.hyprland.org/Configuring/Variables/#variable-types for info about colors
-    #col.active_border = rgba(d400ffee) rgba(ff00ddee) 45deg #purple/pink
-    #col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg #blue/green
-    col.active_border = rgba(eb5234ee) rgba(eb8634ee) 45deg #red/orange
+    col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
     #col.active_border = rgba(db11edee)
-    #col.inactive_border = rgba(595959aa)
+    col.inactive_border = rgba(595959aa)
 
     # Set to true enable resizing windows by clicking and dragging on borders and gaps
     resize_on_border = false
@@ -109,16 +103,16 @@ decoration {
     active_opacity = 1.0
     inactive_opacity = 1.0
 
- #   drop_shadow = true
- #   shadow_range = 4
- #   shadow_render_power = 3
- #   col.shadow = rgba(1a1a1aee)
+    drop_shadow = true
+    shadow_range = 4
+    shadow_render_power = 3
+    col.shadow = rgba(1a1a1aee)
 
     # https://wiki.hyprland.org/Configuring/Variables/#blur
     blur {
         enabled = true
         size = 3
-        passes = 3
+        passes = 1
 
         vibrancy = 0.1696
     }
