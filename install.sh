@@ -15,15 +15,15 @@ echo "installing packages"
 yay -S --needed - < packages
 
 echo "Extracting Kripton theme..."
-tar -xf ~/hyprland1/Kripton.tar.xz
-mv ~/hyprland1/Kripton ~/.themes/
+tar -xf ~/hypr/Kripton.tar.xz
+mv ~/hypr/Kripton ~/.themes/
 
 echo "Kripton theme has been installed successfully."
 
 curl -fsSL https://ollama.com/install.sh | sh
 
 echo "Installing config files"
-mv ~/hyprland1/config/* ~/.config/
+mv ~/hypr/config/* ~/.config/
 
 echo "Installation has completed. Reboot your fucking system. Have fun!!"
 
