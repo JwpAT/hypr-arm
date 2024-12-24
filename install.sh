@@ -20,4 +20,7 @@ mv ~/Kripton ~/.themes/
 
 echo "Kripton theme has been installed successfully."
 
+echo "Installing config files"
+p -r config/* ~/.config/
+
 echo "Installation has completed. Reboot your fucking system and don't break it, or else you'll have to deal with me again. Have fun faggot."
