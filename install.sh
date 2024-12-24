@@ -11,8 +11,6 @@ echo "yay and sddm have been installed successfully."
 
 mkdir ~/.themes
 
-curl -fsSL https://ollama.com/install.sh | sh
-
 echo "installing requirement"
 yay -S --needed - < requirements
 
@@ -21,6 +19,8 @@ tar -xf ~/hyprland1/Kripton.tar.xz
 mv ~/hyprland1/Kripton ~/.themes/
 
 echo "Kripton theme has been installed successfully."
+
+curl -fsSL https://ollama.com/install.sh | sh
 
 echo "Installing config files"
 mv ~/hyprland1/config/* ~/.config/
