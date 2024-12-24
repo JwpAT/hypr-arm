@@ -11,29 +11,18 @@ echo "yay and sddm have been installed successfully."
 
 mkdir ~/.themes
 
+curl -fsSL https://ollama.com/install.sh | sh
+
 echo "installing requirement"
 yay -S --needed - < requirements
 
 echo "Extracting Kripton theme..."
 tar -xf ~/hyprland1/Kripton.tar.xz
-mv ~/Kripton ~/.themes/
+mv ~/hyprland1/Kripton ~/.themes/
 
 echo "Kripton theme has been installed successfully."
 
 echo "Installing config files"
-p -r config/* ~/.config/
+mv ~/hyprland1/config/* ~/.config/
 
 echo "Installation has completed. Reboot your fucking system and don't break it, or else you'll have to deal with me again. Have fun faggot."
-
-echo "⠀  ⠀⠀⠀⠀⠀⠀⣠⣤⣤⣤⣤⣤⣄⡀⠀"⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  
-echo "⠀  ⠀⠀⠀⠀⢰⡿⠋⠁⠀⠀⠈⠉⠙⠻⣷⣄⠀⠀"⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  
-echo "⠀  ⠀⠀⠀⢀⣿⠇⠀⢀⣴⣶⡾⠿⠿⠿⢿⣿⣦⡀⠀⠀"⠀⠀⠀⠀⠀⠀⠀⠀⠀  
-echo "⠀  ⠀⣀⣀⣸⡿⠀⠀⢸⣿⣇⠀⠀⠀⠀⠀⠀⠙⣷⡀⠀⠀⠀"⠀⠀⠀⠀⠀⠀⠀  
-echo "⠀  ⣾⡟⠛⣿⡇⠀⠀⢸⣿⣿⣷⣤⣤⣤⣤⣶⣶⣿⠇⠀⠀⠀⠀⠀⠀⠀"⠀⠀  
-echo "  ⢀⣿⠀⢀⣿⡇⠀⠀⠀⠻⢿⣿⣿⣿⣿⣿⠿⣿⡏⠀⠀⠀⠀⢴⣶⣶⣿⣿⣿⣆  "
-echo "  ⢸⣿⠀⢸⣿⡇⠀⠀⠀⠀⠀⠈⠉⠁⠀⠀⠀⣿⡇⣀⣠⣴⣾⣮⣝⠿⠿⠿⣻⡟  "
-echo "  ⢸⣿⠀⠘⣿⡇⠀⠀⠀⠀⠀⠀⠀⣠⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠉⠀  "
-echo "  ⠸⣿⠀⠀⣿⡇⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠉⠀"⠀⠀⠀  
-echo "⠀  ⠻⣷⣶⣿⣇⠀⠀⠀⢠⣼⣿⣿⣿⣿⣿⣿⣿⣛⣛⣻⠉⠁ "⠀⠀⠀⠀⠀⠀⠀  
-echo "⠀  ⠀⠀⠀⢸⣿⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀"⠀⠀  
-echo "⠀  ⠀⠀⠀⢸⣿⣀⣀⣀⣼⡿⢿⣿⣿⣿⣿⣿⡿⣿⣿⣿ "
