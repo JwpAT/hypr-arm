@@ -11,8 +11,8 @@ echo "yay and sddm have been installed successfully."
 
 mkdir ~/.themes
 
-echo "installing requirement"
-yay -S --needed - < requirements
+echo "installing packages"
+yay -S --needed - < packages
 
 echo "Extracting Kripton theme..."
 tar -xf ~/hyprland1/Kripton.tar.xz
