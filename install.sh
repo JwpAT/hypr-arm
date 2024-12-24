@@ -25,4 +25,21 @@ curl -fsSL https://ollama.com/install.sh | sh
 echo "Installing config files"
 mv ~/hyprland1/config/* ~/.config/
 
-echo "Installation has completed. Reboot your fucking system and don't break it, or else you'll have to deal with me again. Have fun faggot."
+echo "Installation has completed. Reboot your fucking system. Have fun!!"
+
+echo "          / \ "
+echo "         |\_/| "
+echo "         |---| "
+echo "         |   | "
+echo "         |   | "
+echo "       _ |=-=| _ "
+echo "   _  / \|   |/ \ "
+echo "  / \|   |   |   ||\ "
+echo " |   |   |   |   | \> "
+echo " |   |   |   |   |   \ "
+echo " | -   -   -   - |)   ) "
+echo " |                   / "
+echo "  \                 / "
+echo "   \               / "
+echo "    \             / "
+echo "     \           / "
