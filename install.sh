@@ -9,16 +9,14 @@ sudo pacman -S sddm
 systemctl enable sddm
 echo "yay and sddm have been installed successfully."
 
-mkdir ~/.themes
-
 echo "installing packages"
 yay -S --needed - < packages
 
-echo "Extracting Kripton theme..."
-tar -xf ~/hypr/Kripton.tar.xz
-mv ~/hypr/Kripton ~/.themes/
+echo "Extracting Catppuccin Mocha theme..."
+unzip ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark.zip
+mv ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark ~/.themes/
 
-echo "Kripton theme has been installed successfully."
+echo "Catppuccin Mocha theme has been installed successfully."
 
 curl -fsSL https://ollama.com/install.sh | sh
 
