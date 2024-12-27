@@ -14,7 +14,7 @@ yay -S --needed - < packages
 
 echo "Extracting Catppuccin Mocha theme..."
 unzip ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark.zip
-mv ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark ~/.themes/
+mv ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark/ ~/.themes/
 
 echo "Catppuccin Mocha theme has been installed successfully."
 
