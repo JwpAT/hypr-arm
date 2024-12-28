@@ -23,21 +23,6 @@ curl -fsSL https://ollama.com/install.sh | sh
 echo "Installing config files"
 mv ~/hypr/config/* ~/.config/
 
-echo "Installation has completed. Reboot your fucking system. Have fun!!"
+chmod +x ~/.config/hypr/hyprlock-greeter.sh
 
-echo "          / \ "
-echo "         |\_/| "
-echo "         |---| "
-echo "         |   | "
-echo "         |   | "
-echo "       _ |=-=| _ "
-echo "   _  / \|   |/ \ "
-echo "  / \|   |   |   ||\ "
-echo " |   |   |   |   | \> "
-echo " |   |   |   |   |   \ "
-echo " | -   -   -   - |)   ) "
-echo " |                   / "
-echo "  \                 / "
-echo "   \               / "
-echo "    \             / "
-echo "     \           / "
+echo "Installation has completed. Reboot your system. Have fun!!"
