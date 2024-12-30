@@ -12,7 +12,8 @@ echo "yay and sddm have been installed successfully."
 echo "installing packages"
 yay -S --needed - < packages
 
-echo "Extracting Catppuccin Mocha theme..."
+echo "Installing Catppuccin Mocha theme..."
+mkdir ~/.themes
 unzip ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark.zip
 cp -r ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark ~/.themes/Catppuccin-Mocha-Standard-Blue-Dark
 
