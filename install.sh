@@ -15,7 +15,7 @@ yay -S --needed - < packages
 echo "Installing Catppuccin Mocha theme..."
 mkdir ~/.themes
 unzip ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark.zip
-cp -r ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark ~/.themes/Catppuccin-Mocha-Standard-Blue-Dark
+cp -r ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark ~/.themes/
 
 echo "Catppuccin Mocha theme has been installed successfully."
 
