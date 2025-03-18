@@ -77,7 +77,7 @@
 		"on-click": "waypaper"
     },
     "custom/gpt": {
-	"format": "GPT",
+	"format": "Llama3",
 		"tooltip": false,
 		"on-click": "kitty -e ollama run llama3"
     },
