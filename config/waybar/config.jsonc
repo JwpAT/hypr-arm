@@ -71,7 +71,7 @@
     },
     "custom/spotify": {
     "exec": "/usr/bin/python3 ~/.config/media-player/mediaplayer.py --player spotify",
-    "format": "{}  ",
+    "format": "  {}",
     "return-type": "json",
     "on-click": "playerctl play-pause",
     "on-double-click": "playerctl next",
