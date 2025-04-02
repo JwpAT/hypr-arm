@@ -18,6 +18,9 @@ unzip ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark.zip
 cp -r ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark ~/.themes/
 echo "Catppuccin Mocha theme has been installed successfully."
 
+systemctl enable bluetooth.service
+systemctl start bluetooth.service 
+
 curl -fsSL https://ollama.com/install.sh | sh
 
 echo "Installing config files"
