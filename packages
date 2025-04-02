@@ -27,3 +27,5 @@ obsidian
 spotify-launcher
 playerctl
 brightnessctl
+bluez
+bluez-utils
