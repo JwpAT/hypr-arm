@@ -186,7 +186,7 @@
     },
     "network": {
         "format-wifi": "{essid}  ",
-	"on-click": "kitty --class floating -e bash ~/.config/network-manager/ncnm.sh",
+	"on-click": "kitty --class floatnmtui -e bash ~/.config/network-manager/ncnm.sh",
         "format-ethernet": "{ipaddr}/{cidr} 󰈀 ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
