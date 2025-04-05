@@ -25,7 +25,8 @@ curl -fsSL https://ollama.com/install.sh | sh
 
 echo "Installing config files"
 mv ~/hypr/config/* ~/.config/
-chmod +x ~/.config/hypr/hyprlock-greeter.sh
+chmod +x ~/.config/scripts/hyprlock-greeter.sh
+chmod +x ~/.config/scripts/wireless-menu.sh
 sudo cp -r ~/.config/wlogout/icons/ /usr/share/wlogout/
 
 echo "Installation has completed. Reboot your system. Have fun!!"
