@@ -9,7 +9,7 @@ while true; do
         --title "Control Center" \
         --menu "Select an option:" 10 50 3 \
         1 "Network Manager (nmtui)" \
-        2 "Bluetooth Control (bluetoothctl)" \
+        2 "Bluetooth Control (bluetuith)" \
         3 "Exit")
 
     case "$CHOICE" in
@@ -17,7 +17,7 @@ while true; do
             TERM=xterm-old nmtui
             ;;
         2)
-            bluetoothctl
+            bluetuith
             ;;
         3)
             clear
