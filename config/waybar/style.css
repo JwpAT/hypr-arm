@@ -153,6 +153,7 @@ button:hover {
 #clock {
     color: #f9e2af;
     margin-top: 5px;
+    margin-right: 5px;
 }
 
 #clock:hover {
