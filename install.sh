@@ -7,7 +7,7 @@ cd ..
 rm -rf yay
 
 # Prompt for installation type
-echo "What type of istallation do you want?"
+echo "What type of installation do you want?"
 echo "1) full installation (extra utilities)"
 echo "2) minimal installation"
 read -p "Enter the number of your choice: " choice
@@ -22,7 +22,7 @@ case $choice in
     yay -S --needed - < packages-min
     ;;
   *)
-    echo "Invalid choise. Installing minimal installation."
+    echo "Invalid choice. Installing minimal installation."
     yay -S --needed - < packages-min
     ;;
 esac
