@@ -45,16 +45,19 @@ case $choice in
   1)
     echo "Downloading llama3.2:1b..."
     curl -fsSL https://ollama.com/install.sh | sh
+    sleep 2
     ollama pull llama3.2:1b
     ;;
   2)
     echo "Downloading llama3.2..."
     curl -fsSL https://ollama.com/install.sh | sh
+    sleep 2
     ollama pull llama3.2
     ;;
   3)
     echo "Downloading llama3.1..."
     curl -fsSL https://ollama.com/install.sh | sh
+    sleep 2
     ollama pull llama3.1
     ;;
   4)
