@@ -86,7 +86,7 @@
     "custom/gpt": {
 	"format": "Llama3",
 		"tooltip": false,
-		"on-click": "kitty -e ollama run llama3"
+		"on-click": "bash ~/.config/scripts/ollama-waybar.sh"
     },
     "sway/scratchpad": {
         "format": "{icon} {count}",
