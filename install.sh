@@ -56,6 +56,7 @@ case $choice in
     echo "Downloading llama3.1..."
     curl -fsSL https://ollama.com/install.sh | sh
     ollama pull llama3.1
+    ;;
   4)
     echo "Skipping LLM download"
     ;;
