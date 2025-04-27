@@ -5,23 +5,8 @@ cd yay
 makepkg -si
 cd ..
 rm -rf yay
-sudo pacman -S sddm
-systemctl enable sddm
-echo "yay and sddm have been installed successfully."
 
-echo "installing packages"
-yay -S --needed - < packages
-
-echo "Installing Catppuccin Mocha theme..."
-mkdir ~/.themes
-unzip ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark.zip
-cp -r ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark ~/.themes/
-echo "Catppuccin Mocha theme has been installed successfully."
-
-systemctl enable bluetooth.service
-systemctl start bluetooth.service
-
-#Prompt installation type
+# Prompt for installation type
 echo "What type of istallation do you want?"
 echo "1) full installation (extra utilities)"
 echo "2) minimal installation"
@@ -30,21 +15,29 @@ read -p "Enter the number of your choice: " choice
 case $choice in
   1)
     echo "Installing minimal installation."
+    yay -S --needed - < packages-min
     ;;
   2)
     echo "Installing full installation."
-    yay -S nano gnome-disk-utility obsidian spotify-launcher fastfetch web-archives battop btop display3d code
+    yay -S --needed - < packages-full
     ;;
   *)
     echo "Invalid choise. Installing minimal installation."
+    yay -S --needed - < packages-min
     ;;
 esac
 
+echo "Installing Catppuccin Mocha theme..."
+mkdir ~/.themes
+unzip ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark.zip
+cp -r ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark ~/.themes/
+echo "Catppuccin Mocha theme has been installed successfully."
+
 # Prompt to choose LLM
-echo "Would you like the install an LLM?"
-echo "1) llama3.2:1b (Smaller, Faster)"
-echo "2) llama3.2 (Larger, Slower)"
-echo "3) skip LLM installation."
+echo "Would you like the install an Ollama local LLM?"
+echo "1) llama3.2:1b (1.3GB)"
+echo "2) llama3.2 (2.0GB)"
+echo "3) Skip LLM installation. Recommended for minimal installation."
 read -p "Enter the number of your choice: " choice
 
 case $choice in
@@ -65,6 +58,10 @@ case $choice in
     echo "Invalid choice. Skipping LLM download."
     ;;
 esac
+
+systemctl enable sddm
+systemctl enable bluetooth.service
+systemctl start bluetooth.service
 
 echo "Installing config files"
 mv ~/hypr/config/* ~/.config/
