@@ -37,7 +37,8 @@ echo "Catppuccin Mocha theme has been installed successfully."
 echo "Would you like the install an Ollama local LLM?"
 echo "1) llama3.2:1b (1.3GB)"
 echo "2) llama3.2 (2.0GB)"
-echo "3) Skip LLM installation. Recommended for minimal installation."
+echo "3) llama3.1 (4.9GiB)"
+echo "4) Skip LLM installation. Recommended for minimal installation."
 read -p "Enter the number of your choice: " choice
 
 case $choice in
@@ -52,6 +53,10 @@ case $choice in
     ollama pull llama3.2
     ;;
   3)
+    echo "Downloading llama3.1..."
+    curl -fsSL https://ollama.com/install.sh | sh
+    ollama pull llama3.1
+  4)
     echo "Skipping LLM download"
     ;;
   *)
