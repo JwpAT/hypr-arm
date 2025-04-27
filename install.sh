@@ -19,13 +19,32 @@ cp -r ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark ~/.themes/
 echo "Catppuccin Mocha theme has been installed successfully."
 
 systemctl enable bluetooth.service
-systemctl start bluetooth.service 
+systemctl start bluetooth.service
+
+#Prompt installation type
+echo "What type of istallation do you want?"
+echo "1) full installation (extra utilities)"
+echo "2) minimal installation"
+read -p "Enter the number of your choice: " choice
+
+case $choice in
+  1)
+    echo "Installing minimal installation."
+    ;;
+  2)
+    echo "Installing full installation."
+    yay -S nano gnome-disk-utility obsidian spotify-launcher fastfetch web-archives battop btop display3d code
+    ;;
+  *)
+    echo "Invalid choise. Installing minimal installation."
+    ;;
+esac
 
 # Prompt to choose LLM
 echo "Would you like the install an LLM?"
 echo "1) llama3.2:1b (Smaller, Faster)"
 echo "2) llama3.2 (Larger, Slower)"
-echo "3) skip LLM installation
+echo "3) skip LLM installation."
 read -p "Enter the number of your choice: " choice
 
 case $choice in
