@@ -14,12 +14,12 @@ read -p "Enter the number of your choice: " choice
 
 case $choice in
   1)
-    echo "Installing minimal installation."
-    yay -S --needed - < packages-min
-    ;;
-  2)
     echo "Installing full installation."
     yay -S --needed - < packages-full
+    ;;
+  2)
+    echo "Installing minimal installation."
+    yay -S --needed - < packages-min
     ;;
   *)
     echo "Invalid choise. Installing minimal installation."
