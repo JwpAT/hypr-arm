@@ -80,9 +80,13 @@ chmod +x ~/.config/scripts/ollama-waybar.sh
 sudo cp -r ~/.config/wlogout/icons/ /usr/share/wlogout/
 
 # Spicetify Config
-echo "Configuring Spicetify"
-spicetify config current_theme catppuccin
-spicetfiy config color_scheme mocha
-spicetify backup apply
+if command -v spicetify >/dev/null 2>&1; then
+    echo "Configuring Spicetify"
+    spicetify config current_theme catppuccin
+    spicetify config color_scheme mocha
+    spicetify backup apply
+else
+    echo "Spotify and Spicetify is not available with minimal Install. You may install this later if wanted."
+fi
 
 echo "Installation has completed. Reboot your system. Have fun!!"
