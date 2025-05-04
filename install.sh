@@ -80,7 +80,7 @@ chmod +x ~/.config/scripts/ollama-waybar.sh
 sudo cp -r ~/.config/wlogout/icons/ /usr/share/wlogout/
 
 # Spicetify Config
-if command -v spicetify >/dev/null 2>&1; then
+if command -v spicetify-cli >/dev/null 2>&1; then
     echo "Configuring Spicetify"
     spicetify config current_theme catppuccin
     spicetify config color_scheme mocha
