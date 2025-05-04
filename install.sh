@@ -79,4 +79,10 @@ chmod +x ~/.config/scripts/wireless-menu.sh
 chmod +x ~/.config/scripts/ollama-waybar.sh
 sudo cp -r ~/.config/wlogout/icons/ /usr/share/wlogout/
 
+# Spicetify Config
+echo "Configuring Spicetify"
+spicetify config current_theme catppuccin
+spicetfiy config color_scheme mocha
+spicetify backup apply
+
 echo "Installation has completed. Reboot your system. Have fun!!"
