@@ -74,19 +74,8 @@ systemctl start bluetooth.service
 
 echo "Installing config files"
 mv ~/hypr/config/* ~/.config/
-chmod +x ~/.config/scripts/hyprlock-greeter.sh
+chmod +x ~/.config/scripts/hyprlock-greeter.sh  
 chmod +x ~/.config/scripts/wireless-menu.sh
 chmod +x ~/.config/scripts/ollama-waybar.sh
 sudo cp -r ~/.config/wlogout/icons/ /usr/share/wlogout/
-
-# Spicetify Config
-if command -v spicetify-cli >/dev/null 2>&1; then
-    echo "Configuring Spicetify"
-    spicetify config current_theme catppuccin
-    spicetify config color_scheme mocha
-    spicetify backup apply
-else
-    echo "Spotify and Spicetify is not available with minimal Install. You may install this later if wanted."
-fi
-
 echo "Installation has completed. Reboot your system. Have fun!!"
