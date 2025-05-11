@@ -32,6 +32,7 @@ echo "✔️ Configuring Firefox profile for Open WebUI..."
 sudo cp ~/hypr/config/Open-WebUI/open-webui.desktop /usr/share/applications/
 firefox -CreateProfile "openwebui /home/$USER/.mozilla/firefox/openwebui"
 cp -r ~hypr/config/Open-WebUI/chrome ~/.mozilla/firefox/openwebui/
+cp -r ~hypr/config/Open-WebUI/applications ~/.local/share/
 echo 'user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);' >> ~/.mozilla/firefox/openwebui/user.js
 
 echo "✔️ Setup complete. Please reboot or log out and back in for Docker group changes to take effect."
