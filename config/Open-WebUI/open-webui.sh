@@ -18,7 +18,7 @@ sudo usermod -aG docker $USER
 echo "creating new group"
 newgrp docker
 
-sleep 1
+sleep 3
 sudo docker run hello-world
 
 #Installing Open WebUI
