@@ -46,7 +46,7 @@ if [ "$choice" = "y" ]; then
     ./config/Open-WebUI/open-webui.sh
 
     echo "Running Firefox setup..."
-    chmod +x ~/hypr/config/firefox/firefox.sh
+    chmod +x config/firefox/firefox.sh
     ./config/firefox/firefox.sh
 
 elif [ "$choice" = "n" ]; then
