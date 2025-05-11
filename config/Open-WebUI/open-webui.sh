@@ -5,19 +5,18 @@ curl -fsSL https://ollama.com/install.sh | sh
 
 #Installing Docker
 sudo pacman -S docker
-
+sleep 2
 echo "starting Docker"
 sudo systemctl start docker.service
-
+sleep 2
 echo "enabling Docker"
 sudo systemctl enable docker.service
-
+sleep 2
 echo "creating user"
 sudo usermod -aG docker $USER
-
+sleep 2 
 echo "creating new group"
 newgrp docker
-
 sleep 3
 sudo docker run hello-world
 
