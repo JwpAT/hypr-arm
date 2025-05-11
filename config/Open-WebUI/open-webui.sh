@@ -29,7 +29,6 @@ echo "✔️ Your WebUI should be available at http://localhost:8080"
 
 # Configuring Firefox for Open WebUI
 echo "✔️ Configuring Firefox profile for Open WebUI..."
-sudo cp ~/hypr/config/Open-WebUI/open-webui.desktop /usr/share/applications/
 firefox -CreateProfile "openwebui /home/$USER/.mozilla/firefox/openwebui"
 cp -r ~hypr/config/Open-WebUI/chrome ~/.mozilla/firefox/openwebui/
 cp -r ~hypr/config/Open-WebUI/applications ~/.local/share/
