@@ -1,31 +1,34 @@
 #!/bin/bash
 
-#Install Ollama
+# Install Ollama
 curl -fsSL https://ollama.com/install.sh | sh
 
-#Installing Docker
-sudo pacman -S docker
+# Installing Docker
+sudo pacman -S --noconfirm docker
 sleep 2
-echo "starting Docker"
+echo "✔️ Starting Docker..."
 sudo systemctl start docker.service
 sleep 2
-echo "enabling Docker"
+echo "✔️ Enabling Docker to start at boot..."
 sudo systemctl enable docker.service
 sleep 2
-echo "creating user"
+echo "✔️ Adding current user to 'docker' group..."
 sudo usermod -aG docker $USER
-sleep 2 
-echo "creating new group"
-newgrp docker
+sleep 2
+echo "⚠️ You must log out and log back in (or run 'newgrp docker') to apply the group change."
+echo "Skipping Docker test until group membership is active."
 sleep 3
-sudo docker run hello-world
 
-#Installing Open WebUI
-docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+# Installing Open WebUI
+echo "✔️ Installing Open WebUI..."
+docker run -d --network=host -v open-webui:/app/backend/data \
+  -e OLLAMA_BASE_URL=http://127.0.0.1:11434 \
+  --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 
-echo "your WebUI should be available at http://localhost:8080"
+echo "✔️ Your WebUI should be available at http://localhost:8080"
 
-#Configuring Firefox for Open Webui
+# Configuring Firefox for Open WebUI
+echo "✔️ Configuring Firefox profile for Open WebUI..."
 cp -r ~/hypr/config/Open-WebUI/openwebui ~/.mozilla/firefox/
 sudo cp ~/hypr/config/Open-WebUI/open-webui.desktop /usr/share/applications/
 
@@ -48,6 +51,8 @@ if ! grep -q "\[Profile3\]" "$profiles_ini"; then
 else
     echo "⚠️ Profile3 already exists. No changes made."
 fi
+
+echo "✔️ Setup complete. Please reboot or log out and back in for Docker group changes to take effect."
 
 
 
