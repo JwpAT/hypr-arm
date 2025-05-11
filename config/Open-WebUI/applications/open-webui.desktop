@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=OpenWebUI
+GenericName=Web App in Fullscreen
+Icon=firefox
+TryExec=openwebui
+Exec=firefox -P openwebui --new-window http://localhost:8080
+Terminal=false
+Categories=Network;WebBrowser;
+StartupWMClass=openwebui
+
