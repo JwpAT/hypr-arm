@@ -44,8 +44,8 @@ read choice
 
 if [ "$choice" = "1" ]; then
     echo "Installing Open WebUI..."
-    chmod +x Open-WebUI/open-webui.sh
-    ./Open-WebUI/open-webui.sh
+    chmod +x config/Open-WebUI/open-webui.sh
+    ./config/Open-WebUI/open-webui.sh
 elif [ "$choice" = "2" ]; then
     echo "Installation cancelled."
 else
