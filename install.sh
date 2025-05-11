@@ -1,3 +1,5 @@
+#!/bin/sh
+
 echo "yay and sddm are not installed. Installing..."
 sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay.git
@@ -33,40 +35,22 @@ unzip ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark.zip
 cp -r ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark ~/.themes/
 echo "Catppuccin Mocha theme has been installed successfully."
 
-# Prompt to choose LLM
-echo "Would you like the install an Ollama local LLM?"
-echo "1) llama3.2:1b (1.3GB)"
-echo "2) llama3.2 (2.0GB)"
-echo "3) llama3.1 (4.9GiB)"
-echo "4) Skip LLM installation. Recommended for minimal installation."
-read -p "Enter the number of your choice: " choice
+#Prompt to install Open WebUI
+echo "Would you like to install Open WebUI for running local LLM's?"
+echo "1. Yes"
+echo "2. No"
+printf "Enter your choice: "
+read choice
 
-case $choice in
-  1)
-    echo "Downloading llama3.2:1b..."
-    curl -fsSL https://ollama.com/install.sh | sh
-    sleep 2
-    ollama pull llama3.2:1b
-    ;;
-  2)
-    echo "Downloading llama3.2..."
-    curl -fsSL https://ollama.com/install.sh | sh
-    sleep 2
-    ollama pull llama3.2
-    ;;
-  3)
-    echo "Downloading llama3.1..."
-    curl -fsSL https://ollama.com/install.sh | sh
-    sleep 2
-    ollama pull llama3.1
-    ;;
-  4)
-    echo "Skipping LLM download"
-    ;;
-  *)
-    echo "Invalid choice. Skipping LLM download."
-    ;;
-esac
+if [ "$choice" = "1" ]; then
+    echo "Installing Open WebUI..."
+    chmod +x Open-WebUI/open-webui.sh
+    ./Open-WebUI/open-webui.sh
+elif [ "$choice" = "2" ]; then
+    echo "Installation cancelled."
+else
+    echo "Invalid choice. Please enter 1 or 2."
+fi
 
 systemctl enable sddm
 systemctl enable bluetooth.service
