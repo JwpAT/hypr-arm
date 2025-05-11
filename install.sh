@@ -35,21 +35,24 @@ unzip ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark.zip
 cp -r ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark ~/.themes/
 echo "Catppuccin Mocha theme has been installed successfully."
 
-#Prompt to install Open WebUI
-echo "Would you like to install Open WebUI for running local LLM's?"
-echo "1. Yes"
-echo "2. No"
-printf "Enter your choice: "
+# Prompt to install Open WebUI
+echo "Would you like to install Open WebUI for running local LLMs?"
+printf "Enter your choice: (y/n): "
 read choice
 
-if [ "$choice" = "1" ]; then
+if [ "$choice" = "y" ]; then
     echo "Installing Open WebUI..."
     chmod +x config/Open-WebUI/open-webui.sh
     ./config/Open-WebUI/open-webui.sh
-elif [ "$choice" = "2" ]; then
+
+    echo "Running Firefox setup..."
+    chmod +x ~/hypr/config/firefox/firefox.sh
+    ./config/firefox/firefox.sh
+
+elif [ "$choice" = "n" ]; then
     echo "Installation cancelled."
 else
-    echo "Invalid choice. Please enter 1 or 2."
+    echo "Invalid choice. Please enter y or n."
 fi
 
 systemctl enable sddm
@@ -57,7 +60,8 @@ systemctl enable bluetooth.service
 systemctl start bluetooth.service
 
 echo "Installing config files"
-mv ~/hypr/config/* ~/.config/
+mv ~/hypr/config/spicetify/catppuccin ~/.config/spicetify/Themes/
+cp -r ~/hypr/config/* ~/.config/
 chmod +x ~/.config/scripts/hyprlock-greeter.sh  
 chmod +x ~/.config/scripts/wireless-menu.sh
 chmod +x ~/.config/scripts/ollama-waybar.sh
