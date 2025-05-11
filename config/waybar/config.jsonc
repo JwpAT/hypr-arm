@@ -29,10 +29,9 @@
     // Choose the order of the modules
     "modules-left": [
     "hyprland/workspaces",
-	"network",
-    "custom/gpt",
+    "network",
     "memory",
-	"battery",
+    "battery",
     "battery#bat2",
     "sway/mode",
     "sway/scratchpad",
@@ -82,9 +81,9 @@
 		"on-click": "waypaper"
     },
     "custom/gpt": {
-	"format": "Llama3",
+	"format": "Open WebUI",
 		"tooltip": false,
-		"on-click": "bash ~/.config/scripts/ollama-waybar.sh"
+		"on-click": "openwebui"
     },
     "sway/scratchpad": {
         "format": "{icon} {count}",
