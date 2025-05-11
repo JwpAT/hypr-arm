@@ -9,6 +9,7 @@ sudo systemctl start docker.service
 sudo systemctl enable docker.service
 sudo usermod -aG docker $USER
 newgrp docker
+sleep 1
 docker run hello-world
 
 #Installing Open WebUI
