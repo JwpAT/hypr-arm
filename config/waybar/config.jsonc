@@ -83,7 +83,7 @@
     "custom/gpt": {
 	"format": "Open WebUI",
 		"tooltip": false,
-		"on-click": "openwebui"
+		"on-click": "firefox -P openwebui --new-window http://localhost:8080"
     },
     "sway/scratchpad": {
         "format": "{icon} {count}",
