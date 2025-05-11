@@ -18,8 +18,8 @@ docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=
 echo "your WebUI should be available at http://localhost:8080"
 
 #Configuring Firefox for Open Webui
-cp -r ~/hypr/Open-WebUI/openwebui ~/.mozilla/firefox/
-sudo cp ~/hypr/Open-WebUI/open-webui.desktop /usr/share/applications/
+cp -r ~/hypr/config/Open-WebUI/openwebui ~/.mozilla/firefox/
+sudo cp ~/hypr/config/Open-WebUI/open-webui.desktop /usr/share/applications/
 
 # Define the profile section
 profile_section='
