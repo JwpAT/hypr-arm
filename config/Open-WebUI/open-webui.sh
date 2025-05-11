@@ -7,7 +7,6 @@ curl -fsSL https://ollama.com/install.sh | sh
 sudo pacman -S docker
 sudo systemctl start docker.service
 sudo systemctl enable docker.service
-sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
 docker run hello-world
