@@ -29,12 +29,14 @@
     // Choose the order of the modules
     "modules-left": [
     "hyprland/workspaces",
+    "custom/gpt"
     "network",
     "memory",
     "battery",
     "battery#bat2",
     "sway/mode",
     "sway/scratchpad",
+    "custom/gpt",
 
     ],
     "modules-center": [
