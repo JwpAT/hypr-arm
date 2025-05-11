@@ -29,31 +29,9 @@ echo "✔️ Your WebUI should be available at http://localhost:8080"
 
 # Configuring Firefox for Open WebUI
 echo "✔️ Configuring Firefox profile for Open WebUI..."
-cp -r ~/hypr/config/Open-WebUI/openwebui ~/.mozilla/firefox/
 sudo cp ~/hypr/config/Open-WebUI/open-webui.desktop /usr/share/applications/
-
-# Define the profile section
-profile_section='
-[Profile3]
-Name=openwebui
-IsRelative=1
-Path=openwebui
-Default=1
-'
-
-# Path to the Firefox profiles.ini file
-profiles_ini="$HOME/.mozilla/firefox/profiles.ini"
-
-# Check if the section already exists
-if ! grep -q "\[Profile3\]" "$profiles_ini"; then
-    echo "$profile_section" >> "$profiles_ini"
-    echo "✔️ Profile3 added to profiles.ini"
-else
-    echo "⚠️ Profile3 already exists. No changes made."
-fi
+firefox -CreateProfile "openwebui /home/$USER/.mozilla/firefox/openwebui"
+cp -r ~hypr/config/Open-WebUI/chrome ~/.mozilla/firefox/openwebui/
+echo 'user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);' >> ~/.mozilla/firefox/openwebui/user.js
 
 echo "✔️ Setup complete. Please reboot or log out and back in for Docker group changes to take effect."
-
-
-
-
