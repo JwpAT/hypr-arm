@@ -64,6 +64,6 @@ mv ~/hypr/config/spicetify/catppuccin ~/.config/spicetify/Themes/
 cp -r ~/hypr/config/* ~/.config/
 chmod +x ~/.config/scripts/hyprlock-greeter.sh  
 chmod +x ~/.config/scripts/wireless-menu.sh
-chmod +x ~/.config/scripts/ollama-waybar.sh
+chmod +x ~/.config/scripts/ai.sh
 sudo cp -r ~/.config/wlogout/icons/ /usr/share/wlogout/
 echo "Installation has completed. Reboot your system. Have fun!!"
