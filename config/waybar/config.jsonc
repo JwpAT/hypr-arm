@@ -82,9 +82,9 @@
 		"on-click": "waypaper"
     },
     "custom/gpt": {
-	"format": "Open WebUI",
+	"format": "GPT",
 		"tooltip": false,
-		"on-click": "firefox -P openwebui --new-window http://localhost:8080"
+		"on-click": "bash ~/.config/scripts/ai.sh"
     },
     "sway/scratchpad": {
         "format": "{icon} {count}",
