@@ -246,8 +246,8 @@ gradient_count = 2
     #gradient_color_2 = '#ff0000'
 
 #Catppuccin:
-    gradient_color_1 = '#bac2de'
-    gradient_color_2 = '#bac2de'
+    gradient_color_1 = '#cba6f7'
+    gradient_color_2 = '#fab387'
 
 #Gay:
     #gradient_color_1 = '#ff0000'
