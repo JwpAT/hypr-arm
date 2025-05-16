@@ -7,11 +7,11 @@ cp ~/hypr/config/firefox/installs.ini ~/.mozilla/firefox/
 
 # Configuring Firefox for Open WebUI
 echo "Configuring Firefox profile for Open WebUI..."
-firefox -CreateProfile "openwebui /home/$USER/.mozilla/firefox/openwebui"
-mkdir -p ~/.mozilla/firefox/openwebui
-cp -r ~/hypr/config/Open-WebUI/chrome ~/.mozilla/firefox/openwebui/
+firefox -CreateProfile "ai /home/$USER/.mozilla/firefox/ai"
+mkdir -p ~/.mozilla/firefox/ai
+cp -r ~/hypr/config/Open-WebUI/chrome ~/.mozilla/firefox/ai/
 cp -r ~/hypr/config/Open-WebUI/applications ~/.local/share/
-echo 'user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);' >> ~/.mozilla/firefox/openwebui/user.js
+echo 'user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);' >> ~/.mozilla/firefox/ai/user.js
 
 # Configuring Main Firefox Profile
 echo "✔️ Configuring main Firefox profile..."
