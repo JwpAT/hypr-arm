@@ -7,7 +7,7 @@ TMPFILE=$(mktemp)
 ping -q -c 1 -W 0.3 8.8.8.8 > /dev/null
 if [ $? -ne 0 ]; then
     # No internet
-    firefox -P openwebui --new-window http://localhost:8080 &
+    firefox -P ai --new-window http://localhost:8080 &
     exit 0
 fi
 
@@ -25,8 +25,8 @@ DURATION=$((END - START))
 # 10KB = 80 kilobits → 100 Kbps = ~800ms → Allow 850ms
 if [ "$DURATION" -le 850 ]; then
     # Internet is fast enough (≥ 100 Kbps)
-    firefox -P openwebui --new-window https://chatgpt.com/ &
+    firefox -P ai --new-window https://chatgpt.com/ &
 else
     # Internet is too slow
-    firefox -P openwebui --new-window http://localhost:8080 &
+    firefox -P ai --new-window http://localhost:8080 &
 fi
