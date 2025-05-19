@@ -163,9 +163,9 @@
       }
     },
     "network": {
-        "format-wifi": "Connected   / ",
+        "format-wifi": "Connected   • ",
 	"on-click": "kitty --class floatwlmenu -e bash ~/.config/scripts/wireless-menu.sh",
-        "format-ethernet": "Connected 󰈀  / ",
+        "format-ethernet": "Connected 󰈀  • ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "No Internet  "
