@@ -59,7 +59,7 @@ mv ~/hypr/config/spicetify/catppuccin ~/.config/spicetify/Themes/
 cp -r ~/hypr/config/* ~/.config/
 
 echo "Running Firefox setup..."
-chmod +x config/firefox/firefox.sh
+chmod +x ~/.config/firefox/firefox.sh
 ~/.config/firefox/firefox.sh
 
 chmod +x ~/.config/scripts/hyprlock-greeter.sh  
