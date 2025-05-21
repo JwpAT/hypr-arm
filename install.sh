@@ -65,7 +65,6 @@ chmod +x config/firefox/firefox.sh
 chmod +x ~/.config/scripts/hyprlock-greeter.sh  
 chmod +x ~/.config/scripts/wireless-menu.sh
 sudo cp -r ~/.config/wlogout/icons/ /usr/share/wlogout/
-#!/bin/bash
 
 echo "-----------------------------------------------------------------------------------------------------------"
 
