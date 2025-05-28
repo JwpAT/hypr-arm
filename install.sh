@@ -42,8 +42,8 @@ read choice
 
 if [ "$choice" = "y" ]; then
     echo "Installing Open WebUI..."
-    chmod +x config/Open-WebUI/open-webui.sh
-    ./config/Open-WebUI/open-webui.sh
+    chmod +x config/install/scripts/open-webui.sh
+    ./config/install/scripts/open-webui.sh
 elif [ "$choice" = "n" ]; then
     echo "Installation cancelled."
 else
@@ -59,7 +59,7 @@ mv ~/hypr/config/spicetify/catppuccin ~/.config/spicetify/Themes/
 cp -r ~/hypr/config/* ~/.config/
 
 echo "Running Firefox setup..."
-chmod +x ~/.config/firefox/firefox.sh
+chmod +x ~/.config/install/scripts/firefox.sh
 ~/.config/firefox/firefox.sh
 
 chmod +x ~/.config/scripts/hyprlock-greeter.sh  
@@ -68,8 +68,5 @@ sudo cp -r ~/.config/wlogout/icons/ /usr/share/wlogout/
 
 echo "-----------------------------------------------------------------------------------------------------------"
 
-if command -v spicetify >/dev/null 2>&1; then
-  echo "Installation has completed! Please reboot your system. To install the Catppuccin Mocha theme for Spotify/Spicetify, locate ~/.config/scripts/spicetify.sh and execute the script."
-else
-  echo "Installation has completed! Reboot your system."
-fi
+chmod +x ~/.config/install/scripts/install-complete.sh
+~/.config/install/scripts/install-complete.sh
