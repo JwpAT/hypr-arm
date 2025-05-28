@@ -9,14 +9,14 @@ cp ~/.config/firefox/installs.ini ~/.mozilla/firefox/
 echo "Configuring Firefox profile for Open WebUI..."
 firefox -CreateProfile "ai /home/$USER/.mozilla/firefox/ai"
 mkdir -p ~/.mozilla/firefox/ai
-cp -r ~/.config/Open-WebUI/chrome ~/.mozilla/firefox/ai/
+cp -r ~/.config/firefox/ai/chrome ~/.mozilla/firefox/ai/
 echo 'user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);' >> ~/.mozilla/firefox/ai/user.js
 
 # Configuring Main Firefox Profile
 echo "✔️ Configuring main Firefox profile..."
 firefox -CreateProfile "default /home/$USER/.mozilla/firefox/default"
 mkdir -p ~/.mozilla/firefox/default
-cp -r ~/.config/firefox/chrome ~/.mozilla/firefox/default/
+cp -r ~/.config/firefox/default/chrome ~/.mozilla/firefox/default/
 echo 'user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);' >> ~/.mozilla/firefox/default/user.js
 
 echo "Firefox has been configured"
