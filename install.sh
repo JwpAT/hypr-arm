@@ -60,7 +60,7 @@ cp -r ~/hypr/config/* ~/.config/
 
 echo "Running Firefox setup..."
 chmod +x ~/.config/install/scripts/firefox.sh
-~/.config/firefox/firefox.sh
+~/.config/install/scripts/firefox.sh
 
 chmod +x ~/.config/scripts/hyprlock-greeter.sh  
 chmod +x ~/.config/scripts/wireless-menu.sh
