@@ -39,8 +39,8 @@ esac
 
 echo "Installing Catppuccin Mocha theme..."
 mkdir ~/.themes
-unzip ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark.zip
-cp -r ~/hypr/Catppuccin-Mocha-Standard-Blue-Dark ~/.themes/
+unzip ~/hypr-arm/Catppuccin-Mocha-Standard-Blue-Dark.zip
+cp -r ~/hypr-arm/Catppuccin-Mocha-Standard-Blue-Dark ~/.themes/
 echo "Catppuccin Mocha theme has been installed successfully."
 
 # Prompt to install Open WebUI
@@ -63,8 +63,8 @@ systemctl enable bluetooth.service
 systemctl start bluetooth.service
 
 echo "Installing config files"
-mv ~/hypr/config/spicetify/catppuccin ~/.config/spicetify/Themes/
-cp -r ~/hypr/config/* ~/.config/
+mv ~/hypr-arm/config/spicetify/catppuccin ~/.config/spicetify/Themes/
+cp -r ~/hypr-arm/config/* ~/.config/
 
 echo "Running Firefox setup..."
 chmod +x ~/.config/install/scripts/firefox.sh
