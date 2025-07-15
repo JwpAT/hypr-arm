@@ -1,3 +1,4 @@
+# Core system
 hyprland
 sddm
 waybar
@@ -16,7 +17,7 @@ unzip
 tar
 ttf-hack-nerd
 hyprlock
-electron
+electron25-bin
 xdg-desktop-portal-hyprland
 hypridle
 playerctl
@@ -27,17 +28,12 @@ dialog
 bluetuith
 nano
 gnome-disk-utility
-obsidian
-spotify-launcher
+
+# Terminal & system tools
 fastfetch
 web-archives
 battop
 btop
-display3d
-code
-tracker
-snapshot
 peaclock
-spicetify-cli
 zenity
 hyfetch
