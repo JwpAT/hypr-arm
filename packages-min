@@ -15,7 +15,7 @@ unzip
 tar
 ttf-hack-nerd
 hyprlock
-electron
+electron25-bin          # ARM-friendly electron package
 xdg-desktop-portal-hyprland
 hypridle
 playerctl
